@@ -1,4 +1,4 @@
-# DarkVibez for macOS
+# DarkVibez for BetterDiscord
 A dark and modern theme for BetterDiscord.
 
 # Important
