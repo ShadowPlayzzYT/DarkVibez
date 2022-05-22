@@ -1,5 +1,6 @@
 # DarkVibez for BetterDiscord
 A dark and modern theme for BetterDiscord.
 
-# Important
-When you're using macOS it's recommended to use the macOS version.
+# About Light Mode
+When you want this theme in Light Mode, please use ColdWinter.
+https://github.com/ShadowPlayzzYT/ColdWinter
