@@ -2,8 +2,8 @@
  * @name DarkVibez
  * @author ShadowPlayzzYT#7841
  * @authorLink https://twitter.com/genappleuser
- * @version 0.12
- * @description A very dark theme for Discord which makes everything look more modern.
+ * @version 0.13
+ * @description A very dark theme for Discord which makes everything look more modern and cozy. Do not use with Light Mode! 
  * @source https://github.com/ShadowPlayzzYT/DarkVibez
 */
 
@@ -12,6 +12,7 @@
     --background-secondary: #0d0d0d; /* Should be the same as --background-1 to fit into everything */
     --background-1: #0d0d0d; /* Background used for sidebar-like things */
     --background-2: linear-gradient(to top right, #161616, #252525); /* Background used for chats, friend list etc. */
+    --bg-card: #00000046; /* Background used for the cards in the Active now area */
     --topleft-border-radius: 12px !important; /* Border-Radius, used in the Top-Left of every page */
     --attachment-bg-file: linear-gradient(90deg, rgb(0, 71, 179) 0%, rgb(27, 27, 27) 55%, rgb(27, 27, 27) 100%); /* The background of a file attachment */
     --attachment-bg-code: rgb(0, 0, 0); /* The background of a code/text attachment */
@@ -99,7 +100,7 @@
     border-radius: 14px;
 }
 
-/*Anderes*/
+/*Other*/
 
 .panels-3wFtMD {
     background: transparent;
@@ -343,7 +344,7 @@
     font-size: 23px;
 }
 
-/*Erscheinungsbild*/
+/*Appearance*/
 
 .peopleColumn-1wMU14 {
     background: var(--background-2);
@@ -463,6 +464,15 @@
 
 .bd-settings-title {
   font-weight: 500;
+}
+
+.emptyCard-KDifrB {
+  border-radius: 12px;
+  background: var(--bg-card);
+}
+
+.contentRegion-3HkfJJ {
+  background: var(--background-2);
 }
 
 /*Buttons*/
