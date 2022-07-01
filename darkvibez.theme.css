@@ -2,23 +2,33 @@
  * @name DarkVibez
  * @author ShadowPlayzzYT#7841
  * @authorLink https://twitter.com/genappleuser
- * @version 0.13
+ * @version 0.14
  * @description A very dark theme for Discord which makes everything look more modern and cozy. Do not use with Light Mode! 
  * @source https://github.com/ShadowPlayzzYT/DarkVibez
 */
 
 :root {
     /* Config */
-    --background-secondary: #0d0d0d; /* Should be the same as --background-1 to fit into everything */
     --background-1: #0d0d0d; /* Background used for sidebar-like things */
     --background-2: linear-gradient(to top right, #161616, #252525); /* Background used for chats, friend list etc. */
+    --background-3: rgb(37, 37, 37); /* Background used for things like the search bar and the second area of a vcs usercount */
+    --bg-usercount: rgb(59, 59, 59); /* Background used for the first part of a vcs usercount */
+    --bg-typebox: #282828; /* Background used for the type box below the chat */
     --bg-card: #00000046; /* Background used for the cards in the Active now area */
-    --topleft-border-radius: 12px !important; /* Border-Radius, used in the Top-Left of every page */
+    --bg-hover: #55555546; /* Background used for some small buttons in hover mode */
+    --topleft-border-radius: 12px !important; /* Border-Radius, used in the top-left of every page */
     --attachment-bg-file: linear-gradient(90deg, rgb(0, 71, 179) 0%, rgb(27, 27, 27) 55%, rgb(27, 27, 27) 100%); /* The background of a file attachment */
     --attachment-bg-code: rgb(0, 0, 0); /* The background of a code/text attachment */
     --attachment-radius: 12px; /* Border-Radius for the attachments */
     --color-scheme: #5865f2; /* Color scheme used for some buttons and other things | Standard: #5865f2*/
-    --font-display: var(--font-primary) /* Replace main Font | Standard: var(--font-primary) */
+    --font-display: var(--font-primary); /* Replace main Font | Standard: var(--font-primary) */
+    --btn-hovered: #30303099; /* Background used for most buttons in hover mode */
+    --btn-selected: #3e3e3e99; /* Background used for most buttons in selected mode */
+
+    /* Don't touch */
+    --background-tertiary: var(--background-3);
+    --background-primary: var(--btn-selected);
+    --background-secondary: var(--background-1);
 }
 
 /* Don't touch! These are fixes for some buggy objects */
@@ -28,9 +38,8 @@
 /*Call Area*/
 
 .root-22AK9z {
-    background: linear-gradient(to bottom, #000000, #212121);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+  background: linear-gradient(to bottom, #000000, #212121);
+  border-radius: 12px;
 }
 
 .wrapper-1gVUIN.minimum-fXpVNc {
@@ -378,12 +387,12 @@
 }
 
 .chatContent-3KubbW {
-    border-top-left-radius: 500px;
-    background: #292929;
+    border-top-left-radius: var(--topleft-border-radius);
+    background: var(--bg-typebox);
 }
 
 .form-3gdLxP {
-    margin-top: 5px;
+    margin-top: 5.5px !important;
     background: transparent;
 }
 
@@ -427,24 +436,24 @@
 .winButtonClose-3Q8ZH5:hover {
   background: linear-gradient(270deg, #830000, #ff0000);
   background-size: 400% 400%;
-  -webkit-animation: close-pulse 1s ease infinite;
-  -moz-animation: close-pulse 1s ease infinite;
-  animation: close-pulse 1s ease infinite;
+  -webkit-animation: pulse 1s ease infinite;
+  -moz-animation: pulse 1s ease infinite;
+  animation: pulse 1s ease infinite;
   border: 1px solid #ff0000;
   border-top: transparent;
 }
 
-@-webkit-keyframes close-pulse {
+@-webkit-keyframes pulse {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-@-moz-keyframes close-pulse {
+@-moz-keyframes pulse {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-@keyframes close-pulse {
+@keyframes pulse {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
@@ -475,10 +484,95 @@
   background: var(--background-2);
 }
 
+.noticeWrapper-8z511t {
+  background: var(--background-1);
+  top: 1px;
+}
+
+.contentRegionScroller-2_GT_N {
+  background: transparent !important;
+}
+
+.wrapper-2vIMkT {
+  background: var(--background-2) !important;
+}
+
+.bd-addon-header {
+  background: rgb(41, 41, 41) !important;
+  border-bottom: 1px solid rgb(68, 68, 68);
+  border-radius: 12px 12px 0 0;
+}
+
+.bd-description-wrap {
+  background: rgb(41, 41, 41) !important;
+}
+
+.bd-footer {
+  background: rgb(41, 41, 41) !important;
+  border-radius: 0 0 12px 12px;
+}
+
+.bd-addon-list .bd-addon-card {
+  background: transparent;
+}
+
+.users-2JoyGL {
+  background: var(--bg-usercount);
+}
+
+.auto-2K3UW5::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d !important;
+}
+
+.auto-2K3UW5::-webkit-scrollbar-track {
+  background: #333333 !important;
+}
+
+.header-3OsQeK {
+  border-radius: 9px 9px 9px 9px;
+}
+
+.header-3OsQeK:hover {
+  border-radius: 9px 9px 9px 9px;
+  background: var(--btn-hovered) !important;
+}
+
+.iconBackgroundTierNone-3M21Zn, .iconBackgroundTierOne-1S68CI, .iconBackgroundTierThree-2hfNBO, .iconBackgroundTierTwo-2XoNXD {
+  color: #333333;
+}
+
 /*Buttons*/
 
 .actionButton-3-B2x- {
     background-color: transparent;
+}
+
+.button-3bklZh:hover {
+  background: var(--bg-hover);
+}
+
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG, .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
+  background: var(--btn-selected) !important;
+}
+
+.side-2ur1Qk .item-3XjbnG:hover {
+  background: var(--btn-hovered) !important;
+}
+
+.modeSelected-3DmyhH .content-1gYQeQ, .modeSelected-3DmyhH:hover .content-1gYQeQ {
+  background: var(--btn-selected) !important;
+}
+
+.content-1gYQeQ:hover {
+  background: var(--btn-hovered) !important;
+}
+
+.interactiveSelected-29CP8y {
+  background: var(--btn-selected) !important;
+}
+
+.interactive-iyXY_x:hover {
+  background: var(--btn-hovered) !important;
 }
 
 /*Attachments*/
