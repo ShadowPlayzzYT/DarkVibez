@@ -1,6 +1,7 @@
 # DarkVibez for BetterDiscord
-A dark and modern theme for BetterDiscord. Simply add it to your Themes folder and activate it in your BetterDiscord settings. Make sure you have Dark Mode active.
+A dark and modern theme for BetterDiscord. Simply add it to your Themes folder and activate it in your BetterDiscord settings. Make sure you have Dark mode active.
 
-# About Light Mode
-If you want this theme in Light Mode, please use ColdWinter.
-https://github.com/ShadowPlayzzYT/ColdWinter
+![dv-small](https://user-images.githubusercontent.com/84387545/186991372-f55b08da-2293-4e84-9881-6c3c50b5a2af.png)
+
+# About Light mode
+DarkVibez is not meant to be used with Light mode! Doing so can cause visual problems.
