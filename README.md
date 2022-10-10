@@ -4,4 +4,4 @@ A dark and modern theme for BetterDiscord. Simply add it to your Themes folder a
 ![dv-small](https://user-images.githubusercontent.com/84387545/186991372-f55b08da-2293-4e84-9881-6c3c50b5a2af.png)
 
 # About Light mode
-DarkVibez is not meant to be used with Light mode! Doing so can cause visual problems.
+DarkVibez is not meant to be used with Light mode! Doing so WILL cause visual problems.
